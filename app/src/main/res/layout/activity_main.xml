@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                  android:orientation="vertical"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textAlignment="center"
+                android:id="@+id/inputLayoutEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/inputEditTextEmail"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textAlignment="center"
+                android:id="@+id/inputLayoutPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPassword"
+                    android:id="@+id/inputEditTextPassword"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+                android:background="@drawable/ic_rounded_button_shape"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:paddingRight="60sp"
+                android:paddingLeft="60sp"
+                android:layout_marginTop="80sp"
+                android:layout_marginBottom="10sp"
+                android:layout_weight="1"
+                android:text="Log In"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_log_in"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

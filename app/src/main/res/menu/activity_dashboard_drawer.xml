@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_home_navigation"
+                android:title="Home"/>
+        <item
+                android:id="@+id/nav_live_stream"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Live Stream"/>
+        <item
+                android:id="@+id/nav_scout"
+                android:icon="@drawable/ic_map_icon"
+                android:title="Scouting"/>
+        <item
+                android:id="@+id/nav_3d_maps"
+                android:icon="@drawable/ic_3d_maps_nav"
+                android:title="3D Maps"/>
+        <item
+                android:id="@+id/nav_statistics"
+                android:icon="@drawable/ic_stats_nav"
+                android:title="Statistics"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                    android:id="@+id/nav_teams"
+                    android:icon="@drawable/ic_teams_nav"
+                    android:title="Teams"/>
+            <item
+                    android:id="@+id/nav_broadcast"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Broadcast"/>
+        </menu>
+    </item>
+
+</menu>

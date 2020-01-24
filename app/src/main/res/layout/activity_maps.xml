@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <fragment android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/map"
+              tools:context=".MapsActivity"
+              android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <Button
+            android:layout_marginBottom="30sp"
+            android:background="@drawable/ic_rounded_button_shape"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:id="@+id/button_scout"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="Assign Drone"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>
